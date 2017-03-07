@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Telefonní_seznam.CallPage">
+  
   <StackLayout>
     <Grid BackgroundColor="#2196F3">
       <Grid.ColumnDefinitions >

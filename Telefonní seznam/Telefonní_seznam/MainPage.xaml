@@ -14,6 +14,10 @@
       <Button Text="Kontakty" Grid.Column="0" Grid.Row="0" BackgroundColor="#1565C0" TextColor="White" VerticalOptions="Center" HeightRequest="40"></Button>
       <Button Text="Volat" Grid.Column="1" Grid.Row="0" BackgroundColor="#1E88E5" TextColor="White" VerticalOptions="Center" HeightRequest="40" Clicked="Open_CallPage"></Button>
     </Grid>
+
+
+    <!--toolbar items xaMARIN-->
+
     <ListView x:Name="ContactsListView" ItemTapped="GetContact" >
       <ListView.ItemTemplate>
         <DataTemplate>
