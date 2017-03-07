@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Telefonní_seznam.CallPage">
+  <StackLayout>
+    <Grid BackgroundColor="#2196F3">
+      <Grid.ColumnDefinitions >
+        <ColumnDefinition Width="*" ></ColumnDefinition>
+        <ColumnDefinition Width="*" ></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="50" ></RowDefinition>
+      </Grid.RowDefinitions>
+      <Button Text="Kontakty" Grid.Column="0" Grid.Row="0" BackgroundColor="#1E88E5" TextColor="White" VerticalOptions="Center" HeightRequest="40" Clicked="Open_MainPage"></Button>
+      <Button Text="Volat" Grid.Column="1" Grid.Row="0" BackgroundColor="#1565C0" TextColor="White" VerticalOptions="Center" HeightRequest="40"></Button>
+    </Grid>
+    <Entry x:Name="Number" VerticalOptions="Center" HorizontalOptions="Center" WidthRequest="200" Placeholder="Tel. číslo" ></Entry>
+    <Button x:Name="CallNumber" Text="Volat" BackgroundColor="#2196F3" TextColor="White" WidthRequest="200" HeightRequest="40" VerticalOptions="Start" HorizontalOptions="Center" Clicked="Call" />
+  </StackLayout>
+</ContentPage>

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Telefonní_seznam.DetailPage">
+  <ScrollView >
+    <StackLayout HorizontalOptions="Center">
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition Width="50"></ColumnDefinition>
+          <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+          <RowDefinition Height="45"></RowDefinition>
+          <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Button x:Name="BackButton" Grid.Column="0" Grid.Row="0" Text="Zpět" BackgroundColor="#2196F3"  WidthRequest="9" HeightRequest="5" Clicked="Back" />
+        <AbsoluteLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1">
+          <BoxView AbsoluteLayout.LayoutBounds="0,0,1,250" AbsoluteLayout.LayoutFlags="PositionProportional,WidthProportional"/>
+          <Image x:Name="Image" Aspect="AspectFill" AbsoluteLayout.LayoutFlags="XProportional" AbsoluteLayout.LayoutBounds="0.5,67,150,150"></Image>
+        </AbsoluteLayout>
+        <Label x:Name="Name" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" HorizontalOptions="Center" VerticalOptions="End"></Label>
+        <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2">
+          <Label x:Name="Number" HorizontalOptions="Center" VerticalOptions="Start"></Label>
+          <Button x:Name="CallButton" Text="Volat" BackgroundColor="#2196F3"  VerticalOptions="Start" HorizontalOptions="Center" TextColor="Black" Clicked="Call" />
+        </StackLayout>
+      </Grid>
+    </StackLayout>
+  </ScrollView>
+</ContentPage>
